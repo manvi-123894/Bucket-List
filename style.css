@@ -162,6 +162,7 @@ button[type = "submit"]{
     margin: 5px 5px;
     border: none;
     font-size: 1.2em;
+    overflow: scroll;
 }
 
 
