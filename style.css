@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+body{
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    outline: none;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffe2e2;
+   
+}
+
+.container h1{ 
+   font-family: 'Kaushan Script', cursive;
+   font-size: 3em;
+   color: #eb586f;
+   text-shadow: 0px -2px 0 black;
+   padding: 25px 0;
+   text-align: center;
+}
+
+#todo-container{
+    width: 75vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+#select select{
+    outline: none;
+    height: 30px;
+    width: 125px;
+    border: 2px solid #eb586f;
+    border-radius: 5px;
+}
+
+
+#select select option{
+    width: 125px;
+}
+
+
+#todo-container input{
+    width: 75%;
+    height: 40px;
+    padding: 0 5px;
+    outline: none;
+    border: none;
+    border: 2px solid #eb586f;
+    border-radius: 5px;
+}
+
+
+button[type = "submit"]{
+    border: none;
+    background-color: transparent;
+}
+
+
+.fa-plus, .fa-check, .fa-trash-alt{
+    font-size: 1.8em;
+    padding: 4px 5px;
+    background-color: #eb586f;
+    border: 2px solid #eb586f;
+    color: #fff;
+    text-align: center;
+    width: 75px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 0px 5px;
+    outline: none;
+}
+
+
+.btn-class{
+    display: flex;
+}
+
+.add{
+    width: 100px;
+    margin-left: 5px;
+    background-color: #eb586f;
+    border: 2px solid #eb586f;
+    color: #fff;
+    outline: none;
+}
+
+.fa-check{
+    background-color: green;
+    border: 2px solid green;
+}
+
+
+.fa-plus:hover, .fa-check:hover, .fa-trash-alt:hover{
+    filter: brightness(110%);
+}
+
+.todo-items{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.single-item input{
+    width: 45%;
+    padding: 0 5px;
+    background-color: #fff;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    font-family: 'Caveat', cursive; 
+    font-family: sans-serif;
+    border-radius: 5px;
+    color: #005086;
+    color: #eb586f;
+    margin: 5px 5px;
+    border: none;
+    font-size: 1.5em;
+}
+
+
+.congratulation{
+    width: 100%;
+    min-height: 75px;
+    background-color: #eb586f;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+    padding: 5px;
+    letter-spacing: 0.1em;
+}
+
+.congratulation i{
+    color: yellow;
+    font-size: 1.5em;
+}
+
+
+
+
+@media screen and (max-width : 767px){
+    #todo-container{
+        width: 100vw;
+    }
+
+
+    #todo-container input{
+        width: 85%;
+    }
+
+    .add{
+        width: 75px;
+    }
+
+    .todo-items{
+        width: 100%;
+    }
+
+    .todo-list{
+        width: 100%;
+    }
+
+    .single-item{
+        width: 100%;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width:367px){
+
+    .btn-class{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fa-plus, .fa-check, .fa-trash-alt{
+        font-size: 1.5em;
+        width: 45px;
+    }
+
+    .single-item input{
+        width: 95%;
+    }    
+
+    .title h1{
+        font-size: 2.5em;
+    }
+}

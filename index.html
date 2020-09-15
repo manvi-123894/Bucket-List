@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <header>
+            <div class="title">
+                <h1>My Bucket List</h1>
+            </div>
+        </header>
+
+
+        <section id="select">
+            <select name="" id="">
+                <option value="all">All</option>
+                <option value="complete">Completed</option>
+                <option value="bucket">On Bucket</option>
+            </select>
+        </section>
+
+        <section id="todo-container">
+         <form action="" id="form">
+            <input type="text" name="" placeholder="Add things you want to do" id="input" value="">
+            <button type="submit">   <i class="fas fa-plus add"></i></button>
+         </form>
+        </section>
+
+     
+        <section class="todo-items">
+            <ul class="todo-list">
+               <li class="single-item">
+                    <input type="text" value="" class="new" disabled>
+                    <div class="btn-class">                    
+                        <i class="fas fa-correct-alt"></i>
+                        <i class="fas fa-trash-alt" id="dlt"></i>
+                    </div>
+               </li>
+            </ul>
+        </section>
+    </div>
+
+
+    <div class="congratulation">
+        <h2><i class="i fas fa-smile"></i><br>Congrats!! You accomplished your goal.  </h2>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
