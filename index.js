@@ -88,7 +88,7 @@ function fetchData(){
 function updateDom(array){
         arr = array.map(function(item){
            return    ` <li class="single-item">
-                <input type="text" value="${item.value}" class="new" disabled/>
+                <input type="text" value="${item.value}" class="new">
                 <div class="btn-class"> 
                 <i class="fas fa-check" id="comp"></i>
                 <i class="fas fa-trash-alt" id="dlt"></i>
