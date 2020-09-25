@@ -127,6 +127,7 @@ function addComplete(target){
         if(target.parentElement.parentElement.childNodes[1].value == item.value){
           
             item.status = "complete";
+             item.value += "✔";
 
             setTimeout( () => {
                 congrats.style.display = "flex";
